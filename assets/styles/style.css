@@ -23,6 +23,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    padding-bottom: -5rem;
 }
 ul{
     list-style: none;
@@ -208,7 +209,7 @@ button:active{
 }
 section.work{
     padding: 4rem 0;
-    padding-bottom: 8rem;
+    padding-bottom: 10rem;
     background: #f2f2f2;
 }
 .section-heading{
@@ -298,6 +299,7 @@ section.work .card-wrapper{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 5rem;
 }
 .contact-container h1{
     color: white;
