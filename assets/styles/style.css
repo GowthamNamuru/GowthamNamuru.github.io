@@ -68,6 +68,14 @@ nav ul li a:hover{
     color: red;
 }
 
+.flip-box-front h1 .desktopView { 
+    display: inline-block;
+}
+
+.flip-box-front h1 .mobileView { 
+    display: none;
+}
+
 .logo{
     font-family: RoadTest;
     color: black;
@@ -273,10 +281,13 @@ section.work .card-wrapper{
   .flip-box-front {
     background-color:var(--dark);
     color:var(--light);
+    text-align: center;
+    vertical-align: middle;
   }
+
   .flip-box-front h1{
-   padding:70px;
-  text-align: center;
+   text-align: center;
+   padding: 90px;
   }
   
   .flip-box-back {
@@ -602,4 +613,18 @@ footer{
     }
 }
 
+@media(max-width:460px) {
+    .flip-box-back p {
+        font-size: 15px;
+    } 
+
+    .flip-box-front span .desktop_view { 
+        display: none;
+    }
+
+    .flip-box-front span .mobile_view { 
+        display: inline-block;
+    }
+
+}
 
