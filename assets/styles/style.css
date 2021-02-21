@@ -18,13 +18,17 @@ body{
 }
 section{
     width: 100%;
-    height: 80vh;
-    background: url("../images/bg.png");
+    height: 85vh;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     padding-bottom: -5rem;
 }
+
+.home-section{
+    background: url("../images/bg.png");
+}
+
 ul{
     list-style: none;
 }
@@ -208,8 +212,10 @@ button:active{
     margin: 0 auto;
 }
 section.work{
-    padding: 4rem 0;
-    padding-bottom: 10rem;
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    /* padding-bottom: 10rem; */
     background: #f2f2f2;
 }
 .section-heading{
@@ -230,11 +236,12 @@ section.work .card-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 2rem;
+    padding-bottom: 2rem;
 }
 .flip-box {
     background-color: transparent;
     width: 350px;
-    height: 250px;
+    height: 280px;
     border: 1px solid #f1f1f1;
     perspective: 1000px;
     border-radius: 20px;
@@ -278,7 +285,7 @@ section.work .card-wrapper{
     transform: rotateY(180deg);
   }
   .flip-box-back h1{
-    padding-top: 70px;
+    /* padding-top: 70px; */
     text-align: center;
   }
   .flip-box-back a{
@@ -286,7 +293,15 @@ section.work .card-wrapper{
       text-decoration: none;
   } 
 
+  .flip-box-back p {
+      padding: 0% 1rem;
+  }
 
+  .flip-box-back .app-store {
+      border: none;
+      background: none;
+      color: rgb(10, 132, 255);
+  }
 
 /*---------------contact section-------------*/
 
@@ -430,7 +445,12 @@ footer{
     *{
         box-sizing: border-box;
     }
-    
+    section.work{
+        padding: 4rem 0;
+    }
+    section {
+        height: 80vh;    
+    }
     .text-container{
         top:46%
     }
@@ -488,6 +508,7 @@ footer{
     section{
         background-image: none;
         background-color: #f7f7f7;
+        height: 80vh;
     }
     .model{
         display: none;
@@ -566,6 +587,7 @@ footer{
     }
     section.work{
         height: auto;
+        padding: 4rem 0;
     }
     section.work .card-wrapper{
         grid-template-columns: repeat(1,1fr);
